@@ -1,0 +1,39 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    position:relative;
+    margin:auto;
+    text-align:center;
+}
+
+/* class added to hide a header for text readers to read. Code copied from MDN. */
+.hidden {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+header {
+    position:fixed;
+    width:100%;
+    top: 0;
+    z-index: 2;
+    border: 5px solid darkblue;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    display:block;
+    text-align: right;
+}
+
+.nav {
+    text-align: right;
+}
+.nav li{
+    display: inline;
+    text-align: right;
+}
+
+.topSpace{
+    text-align: left;
+    top:auto;
+}
