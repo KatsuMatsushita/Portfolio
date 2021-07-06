@@ -1,8 +1,14 @@
+html{
+    /* set font-size (1rem) to 10px to make it easier to calculate font sizes */
+    font-size: 62.5%;
+}
+
 body {
     font-family:'Times New Roman', Times, serif;
     position:relative;
     margin:auto;
     text-align:center;
+    font-size: 1.75rem;
 }
 
 /* class added to hide a header for text readers to read. Code copied from MDN. */
@@ -13,7 +19,7 @@ body {
 }
 
 header {
-    position:fixed;
+    position:relative;
     width:100%;
     top: 0;
     z-index: 2;
@@ -33,7 +39,36 @@ header {
     text-align: right;
 }
 
-.topSpace{
+.leftAlign {
     text-align: left;
+}
+
+.selfImage{
+    text-align: center;
     top:auto;
+}
+
+
+
+#portfolio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+/* portCard class is used for aligning each individual work */
+.portCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+}
+
+
+#contact li{
+    display: inline;
+    text-align: center;
+    text-decoration: underline;
+    font-size: large;
 }
