@@ -61,14 +61,11 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    width:75%;
-    height:75%;
-    object-fit: cover;
 }
-
+/* this will resize the image to properly fit */
 .firstWork img {
-    width: 75%;
-    height: 75%;
+    width: 200px;
+    height: 400px;
     object-fit: cover;
 }
 
@@ -79,11 +76,14 @@ header {
     justify-content: flex-start;
     min-height: 100%;
     padding: 2rem;
-    object-fit: cover;
-    width:50%;
-    height:50%;
 }
 
+/* this img class will resize the portfolio application cards to be smaller than the first work, and make them of a standard size */
+.portCard img {
+    object-fit: cover;
+    width:200px;
+    height:300px;
+}
 
 #contact li{
     display: inline;
