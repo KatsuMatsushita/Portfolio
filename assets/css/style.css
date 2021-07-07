@@ -49,12 +49,28 @@ header {
 }
 
 
-
+/* This makes the Portfolio section into a flexbox, and puts the applications in a row */
 #portfolio{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+/* firstWork class is used for aligning the first work and making the image bigger than the other application cards */
+.firstWork{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width:75%;
+    height:75%;
+    object-fit: cover;
+}
+
+.firstWork img {
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+}
 
 /* portCard class is used for aligning each individual work */
 .portCard{
@@ -63,6 +79,9 @@ header {
     justify-content: flex-start;
     min-height: 100%;
     padding: 2rem;
+    object-fit: cover;
+    width:50%;
+    height:50%;
 }
 
 
