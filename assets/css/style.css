@@ -58,14 +58,12 @@ header {
 
 /* firstWork class is used for aligning the first work and making the image bigger than the other application cards */
 .firstWork{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
+    text-align: center;
 }
 /* this will resize the image to properly fit */
 .firstWork img {
-    width: 200px;
-    height: 400px;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
 }
 
